@@ -8,3 +8,7 @@
   font-family: lausane500;
   src: url(../public/fonts/Lausanne-500.woff2);
 }
+
+@theme {
+  --color-sapgreen: #d3fd50;
+}
