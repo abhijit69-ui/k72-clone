@@ -31,11 +31,15 @@ const Agence = () => {
     gsap.to(imageDivRef.current, {
       scrollTrigger: {
         trigger: imageDivRef.current,
-        markers: true,
-        start: 'top 21.9%',
-        end: 'top -100%',
-        scrub: true,
+        start: 'top 25%',
+        end: 'top -80%',
+        scrub: 1,
         pin: true,
+        pinSpacing: true,
+        pinReparent: true,
+        pinType: 'transform',
+        anticipatePin: 1,
+        invalidateOnRefresh: true,
         onUpdate: (self) => {
           // Localize and narrow the image element
           const imgEl = imageRef.current;
@@ -52,10 +56,10 @@ const Agence = () => {
 
   return (
     <div>
-      <div className='section1'>
+      <div className='section1 py-1'>
         <div
           ref={imageDivRef}
-          className='absolute h-[20vw] w-[15vw] rounded-4xl overflow-hidden top-40 left-[30vw] '
+          className='absolute h-[20vw] w-[15vw] rounded-3xl overflow-hidden top-40 left-[30vw] '
         >
           <img
             ref={imageRef}

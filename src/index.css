@@ -12,3 +12,7 @@
 @theme {
   --color-sapgreen: #d3fd50;
 }
+
+body {
+  overflow-x: hidden;
+}
