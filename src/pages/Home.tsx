@@ -4,7 +4,7 @@ import Video from '../components/home/Video';
 
 const Home = () => {
   return (
-    <div>
+    <div className=' text-white'>
       <div className='h-screen w-screen fixed'>
         <Video />
       </div>

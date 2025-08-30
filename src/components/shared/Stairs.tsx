@@ -40,8 +40,8 @@ const Stairs = ({ children }: Props) => {
 
     gsap.from(pageRef.current, {
       opacity: 0,
-      delay: 1.3,
-      scale: 1.2,
+      delay: 1.2,
+      scale: 1,
     });
   }, [currentPath]);
 
